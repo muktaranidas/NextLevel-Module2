@@ -13,3 +13,17 @@ type d = a1 extends null
   : a4 extends null
   ? null
   : never;
+
+type Sheikh = {
+  wife1: string;
+  wife2: string;
+};
+//check korbe ei sheikh type a wife1 ase kina? true : false
+type A = keyof Sheikh;
+type CheckProperty<T, K> = K extends keyof Sheikh ? true : false;
+type CheckWife1 = CheckProperty<Sheikh, "wife12">;
+
+// matha kharap kora example
+type Bandhubi = "Mukta" | "Proma" | "Sajid";
+type RemoveBandhubi<T, K> = T extends K ? never : T;
+type CurrentBandhubi = RemoveBandhubi<Bandhubi, "Sajid">;
