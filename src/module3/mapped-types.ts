@@ -14,7 +14,7 @@ type Area<T> = {
 };
 
 const area1: Area<{ name: string }> = { name: "Mukta" };
-area1.name = 17;
+// area1.name = 17;
 
 type AreaString = {
   height: string;
