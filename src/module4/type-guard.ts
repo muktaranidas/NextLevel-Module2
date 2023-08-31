@@ -33,7 +33,7 @@ const adminUser1: AdminUserType = { name: "Sudipto Dey", role: "admin" };
 console.log(getUser(normalUser1));
 console.log(getUser(adminUser1));
 
-//instacof guard
+//instanceof guard
 
 class Animal {
   name: string;
@@ -51,9 +51,30 @@ class Dog extends Animal {
   constructor(name: string, species: string) {
     super(name, species);
   }
+  makeBark() {
+    console.log("I am barking");
+  }
 }
 class Cat extends Animal {
   constructor(name: string, species: string) {
     super(name, species);
   }
+  makeMeaw() {
+    console.log("I am meawing");
+  }
 }
+
+function getAnimal(animal: Animal) {
+  if (animal instanceof Dog) {
+    animal.makeBark();
+  } else if (animal instanceof Cat) {
+    animal.makeMeaw();
+  } else {
+    animal.makeSound();
+  }
+}
+
+const animal1 = new Dog("Sudipto", "dog"); // instance -> Dog
+const animal2 = new Cat("Mukta", "cat"); // instance -> Cat
+
+getAnimal(animal1);
