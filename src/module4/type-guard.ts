@@ -32,3 +32,28 @@ const adminUser1: AdminUserType = { name: "Sudipto Dey", role: "admin" };
 
 console.log(getUser(normalUser1));
 console.log(getUser(adminUser1));
+
+//instacof guard
+
+class Animal {
+  name: string;
+  species: string;
+  constructor(name: string, species: string) {
+    this.name = name;
+    this.species = species;
+  }
+  makeSound() {
+    console.log("I am making sound");
+  }
+}
+
+class Dog extends Animal {
+  constructor(name: string, species: string) {
+    super(name, species);
+  }
+}
+class Cat extends Animal {
+  constructor(name: string, species: string) {
+    super(name, species);
+  }
+}
