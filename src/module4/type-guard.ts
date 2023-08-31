@@ -28,7 +28,7 @@ function getUser(user: NormalUserType | AdminUserType): string {
 }
 
 const normalUser1: NormalUserType = { name: "Mukta" };
-const adminUser1: AdminUserType = { name: "Sudipto", role: "admin" };
+const adminUser1: AdminUserType = { name: "Sudipto Dey", role: "admin" };
 
 console.log(getUser(normalUser1));
 console.log(getUser(adminUser1));
