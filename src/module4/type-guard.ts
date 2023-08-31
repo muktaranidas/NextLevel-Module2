@@ -64,10 +64,18 @@ class Cat extends Animal {
   }
 }
 
+function isDog(animal: Animal): animal is Dog {
+  return animal instanceof Dog;
+}
+
+function isCat(animal: Animal): animal is Cat {
+  return animal instanceof Cat;
+}
+
 function getAnimal(animal: Animal) {
-  if (animal instanceof Dog) {
+  if (isDog(animal)) {
     animal.makeBark();
-  } else if (animal instanceof Cat) {
+  } else if (isCat(animal)) {
     animal.makeMeaw();
   } else {
     animal.makeSound();
@@ -77,4 +85,4 @@ function getAnimal(animal: Animal) {
 const animal1 = new Dog("Sudipto", "dog"); // instance -> Dog
 const animal2 = new Cat("Mukta", "cat"); // instance -> Cat
 
-getAnimal(animal1);
+getAnimal(animal2);
