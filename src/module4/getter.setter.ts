@@ -14,12 +14,17 @@ class BankAccount {
     return this.balance;
   }
 
+  // setter
+  set deposit(amount: number) {
+    this.balance = this.balance + amount;
+  }
+
   getBalance(): number {
     return this.balance;
   }
-  addDeposit(account: number) {
-    this.balance = this.balance + account;
-  }
+  // addDeposit(account: number) {
+  //   this.balance = this.balance + account;
+  // }
 }
 
 class StudentAccount extends BankAccount {
@@ -32,4 +37,6 @@ const myAccount = new BankAccount(2733, "Mukta", 100);
 // myAccount.addDeposit(20);
 // myAccount.getBalance();
 // myAccount.getBalance();
+console.log(myAccount.balanceGet);
+myAccount.deposit = 29;
 console.log(myAccount.balanceGet);
