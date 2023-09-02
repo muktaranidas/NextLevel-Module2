@@ -9,6 +9,11 @@ class BankAccount {
     this.balance = balance;
   }
 
+  //getter
+  get balanceGet(): number {
+    return this.balance;
+  }
+
   getBalance(): number {
     return this.balance;
   }
@@ -27,4 +32,4 @@ const myAccount = new BankAccount(2733, "Mukta", 100);
 // myAccount.addDeposit(20);
 // myAccount.getBalance();
 // myAccount.getBalance();
-console.log(myAccount.getBalance());
+console.log(myAccount.balanceGet);
