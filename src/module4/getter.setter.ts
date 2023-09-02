@@ -9,8 +9,8 @@ class BankAccount {
     this.balance = balance;
   }
 
-  getBalance() {
-    console.log(`My Current Balance is: ${this.balance}`);
+  getBalance(): number {
+    return this.balance;
   }
   addDeposit(account: number) {
     this.balance = this.balance + account;
@@ -19,9 +19,12 @@ class BankAccount {
 
 class StudentAccount extends BankAccount {
   test() {
-    this.getBalance();
+    // this.getBalance();
   }
 }
 const myAccount = new BankAccount(2733, "Mukta", 100);
 // myAccount.balance = 0; //cannt access coz is private modifier
-console.log(myAccount);
+// myAccount.addDeposit(20);
+// myAccount.getBalance();
+// myAccount.getBalance();
+console.log(myAccount.getBalance());
