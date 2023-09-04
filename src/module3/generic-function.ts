@@ -12,7 +12,7 @@
 
 // const result3 = createArray<Name, boolean>({ name: "Bangladesh" }, false);
 
-//spread Operator
+//spread operator
 
 // const newData = { ...myInfo, crush };
 
