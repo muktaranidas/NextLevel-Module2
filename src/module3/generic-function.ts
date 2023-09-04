@@ -22,7 +22,7 @@
 //   return newData;
 // };
 // const myInfo = {
-//   name: "Muktaa",
+//   name: "Mukta",
 //   age: 215,
 //   salary: 100000000,
 // };
