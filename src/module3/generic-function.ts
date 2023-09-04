@@ -23,7 +23,7 @@
 // };
 // const myInfo = {
 //   name: "Muktaa",
-//   age: 25,
+//   age: 215,
 //   salary: 10000000000,
 // };
 // const result5 = addMeInMyCrushMind(myInfo);
