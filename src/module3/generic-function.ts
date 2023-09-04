@@ -17,7 +17,7 @@
 // const newData = { ...myInfo, crush };
 
 // const addMeInMyCrushMind = <T>(myInfo: T) => {
-//   const crush = "kate Winslet";
+//   const crush = "kate Winsle";
 //   const newData = { ...myInfo, crush };
 //   return newData;
 // };
